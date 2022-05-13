@@ -14,8 +14,8 @@ console.log('pathPrefix is set to ...', pathPrefix);
 // see "eleventyConfig.addGlobalData("site", globalData);"" below
 // related: https://github.com/11ty/eleventy/issues/1641
 const globalSiteData = {
-  title: "11ty-plain-bootstrap5",
-  description: "Template for static site generator Eleventy with Boostrap 5 and SCSS/JS compilation via laravel-mix.",
+  title: "originebrass.com",
+  description: "Website for the 4 Origines brewery in Dorval",
   locale: 'en',
   baseUrl: baseUrl,
   pathPrefix: pathPrefix,
