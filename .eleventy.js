@@ -72,6 +72,9 @@ module.exports = function (eleventyConfig) {
   // Copy (static) files to output (_site)
   eleventyConfig.addPassthroughCopy("src/assets");
 
+  // Copy (favicon) files to output (_site)
+  eleventyConfig.addPassthroughCopy({"src/favicon_package/": "/"});
+
   // Copy transformed images
   // TODO: this is executed too soon? imgs not there?
   eleventyConfig.addPassthroughCopy("img/");
