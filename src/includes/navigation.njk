@@ -6,11 +6,9 @@
     </a>
 </li>
 {%- endmacro %}
-
 {# See: https://www.11ty.dev/docs/plugins/navigation/ #}
-
 {# Nav Links  #}
-<ul class="navbar-nav ms-auto">
+<ul class="navbar-nav mx-auto">
     {%- for item in collections.all | eleventyNavigation -%}
     {%- if item.url and item.hideInMainNav != true -%}
     {%- set isCurrent = (item.url == page.url) -%}
@@ -43,6 +41,6 @@
     </li>
     {%- endif -%}
     {%- endfor -%}
+  <li class="nav-item"><a href="https://4origines.com" class="nav-link">Microbrasserie 4 Origines</a></li>
 </ul>
-
 {# This file is ignored by prettier by now /bc too much damage ;-), see .prettierignore #}

@@ -14,7 +14,7 @@ console.log('pathPrefix is set to ...', pathPrefix);
 // see "eleventyConfig.addGlobalData("site", globalData);"" below
 // related: https://github.com/11ty/eleventy/issues/1641
 const globalSiteData = {
-  title: "Origine Brass - Restaurant",
+  title: "Origine Brass",
   description: "Website for the 4 Origines restaurant in Dorval",
   locale: 'en',
   baseUrl: baseUrl,

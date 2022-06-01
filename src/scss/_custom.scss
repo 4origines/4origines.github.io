@@ -1,3 +1,10 @@
+@font-face {
+	font-family: "Cervo";
+	src: url("../assets/fonts/Cervo-Regular.otf") format("otf");
+  font-family: "LuloCleanOne";
+	src: url("../assets/fonts/LuloCleanOneBold.otf") format("otf");
+}
+
 /* via https://getbootstrap.com/docs/5.0/examples/jumbotron/ */
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -13,12 +20,19 @@
   }
 }
 
-/* for bootstrap-icons (svg) */
-.bi {
-  width: 1em;
-  height: 1em;
-  display: inline-block;
-  vertical-align: -0.125em;
+.logo {
+  .title {
+    font-size: 3rem;
+    letter-spacing: .2em;
+
+    small {
+      font-family: Cervo, 'Courier New', Courier, monospace;
+    }
+  }
+  span {
+    font-family: LuloCleanOne, 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
 }
 
 .img-fit-cover-container {
