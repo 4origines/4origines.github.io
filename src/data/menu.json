@@ -1,0 +1,98 @@
+[{
+		"section": "Appetizers",
+		"details": [{
+				"name": "Homemade Spicy Chicken Biters",
+				"price": "13.75",
+				"description": "Breaded in-house with GLUTEN FREE flour and hand battered, tossed in Frank's hot sauce.",
+				"image": "menu-item.png"
+			},
+			{
+				"name": "Chevaps",
+				"price": "13.75",
+				"description": "Ground Beef and Pork served with mild sauce and diced onion. They are very addictive",
+				"image": "menu-item.png"
+			},
+			{
+				"name": "Parmesan Crusted Mushrooms",
+				"price": "13.25",
+				"description": "Mulligans Favorite. Cremini mushrooms tossed in panko, deep fried and finished with parmesan. Served with Garlic Aioli",
+				"image": "menu-item.png"
+			},
+			{
+				"name": "Deep Fried Cauliflower",
+				"price": "11.75",
+				"description": "Big chunks of cauliflower tossed in our secret recipe and deep fried. Served with your choice of dip. GLUTEN FREE",
+				"image": "menu-item.png"
+			},
+			{
+				"name": "Mozzarella Sticks",
+				"price": "12.25",
+				"description": "Served with homemade marinara sauce",
+				"image": "menu-item.png"
+			}
+		]
+	},
+	{
+		"section": "Soup & Salad",
+		"details": [{
+				"name": "Caesar",
+				"price": "12.25",
+				"description": "Romaine, bacon bits, croutons tossed in our Caesar dressing.",
+				"image": "menu-item.png",
+				"additions": [{
+					"name": "Chicken",
+					"price": "3.00"
+				}]
+			},
+			{
+				"name": "Greek",
+				"price": "12.25",
+				"description": "Mixed greens, cucumber, red onion, diced tomato, black olives and feta cheese.",
+				"image": "menu-item.png",
+				"additions": [{
+					"name": "Chicken",
+					"price": "3.00"
+				}]
+			}
+		]
+	},
+	{
+		"section": "Gourmet Burgers",
+		"details": [{
+			"name": "Mullys Own",
+			"price": "15.50",
+			"description": "Breaded in-house with GLUTEN FREE flour and hand battered, tossed in Frank's hot sauce.",
+			"image": "menu-item.png",
+			"additions": [{
+				"name": "cheese",
+				"price": "0.75"
+			}]
+		}]
+	},
+	{
+		"section": "Quality Sandwiches",
+		"details": [{
+			"name": "Canada Club",
+			"price": "16.25",
+			"description": "Triple Decker - Real oven roasted turkey, bacon, tomato and lettuce on your choice of toasted white or brown bread.",
+			"image": "menu-item.png"
+		}]
+	},
+	{
+		"section": "Rice Bowls",
+		"details": [{
+			"name": "Jerk Chicken",
+			"price": "16.75",
+			"description": "Spicy jerk chicken served in bowl over basmati rice. Served with garlic naan",
+			"image": "menu-item.png"
+		}]
+	}, {
+		"section": "Side",
+		"details": [{
+			"name": "French fries",
+			"price": "A basket of fries",
+			"description": "7.25",
+			"image": "menu-item.png"
+		}]
+	}
+]
