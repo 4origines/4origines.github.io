@@ -1,54 +1,70 @@
 @font-face {
 	font-family: "Cervo";
 	src: url("../assets/fonts/Cervo-Regular.otf") format("otf");
-  font-family: "LuloCleanOne";
+	font-family: "LuloCleanOne";
 	src: url("../assets/fonts/LuloCleanOneBold.otf") format("otf");
 }
 
 /* via https://getbootstrap.com/docs/5.0/examples/jumbotron/ */
 .bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
 }
 
 @media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
 }
 
 .logo {
-  .title {
-    font-size: 3rem;
-    letter-spacing: .2em;
+	.title {
+		font-size: 3rem;
+		letter-spacing: .2em;
 
-    small {
-      font-family: Cervo, 'Courier New', Courier, monospace;
-    }
-  }
-  span {
-    font-family: LuloCleanOne, 'Courier New', Courier, monospace;
-    font-weight: bold;
-  }
+		small {
+			font-family: Cervo, 'Courier New', Courier, monospace;
+		}
+	}
+
+	span {
+		font-family: LuloCleanOne, 'Courier New', Courier, monospace;
+		font-weight: bold;
+	}
 }
 
 .img-fit-cover-container {
-  &.rounded-3 {
-    picture img {
-      border-radius: 0.3rem !important;
-    }
-  }
-  picture {
-    width: 100%;
-    height: 100%;
-    display: flex;
-  }
-  picture img {
-    object-fit: cover;
-    height: auto;
-    width: 100%;
-  }
+	&.rounded-3 {
+		picture img {
+			border-radius: 0.3rem !important;
+		}
+	}
+
+	picture {
+		width: 100%;
+		height: 100%;
+		display: flex;
+	}
+
+	picture img {
+		object-fit: cover;
+		height: auto;
+		width: 100%;
+	}
+}
+
+.social {
+
+	a {
+		color: #000;
+		text-decoration: none;
+
+		&:hover {
+			color: #0d6efd;
+		}
+	}
+
 }

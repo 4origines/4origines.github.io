@@ -1,0 +1,12 @@
+	<div class="social">
+		<ul class="row list-unstyled mt-4">
+			{% for item in social %}
+			<li class="col text-center">
+				<a href="{{ item.link }}">
+					<i aria-hidden="true" class="{{ item.icon }} fa-4x d-block"></i>
+					<span class="d-block">{{ item.site }}</span>
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>

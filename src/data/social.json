@@ -1,0 +1,16 @@
+[{
+  "site" : "Facebook",
+  "link" : "https://www.facebook.com/4originesbeer",
+  "icon" : "fa-solid fa-envelope"
+},
+{
+  "site" : "Instagram",
+  "link" : "https://www.instagram.com/originebrass/",
+  "icon" : "fa-brands fa-facebook"
+},
+{
+  "site" : "Mail",
+  "link" : "originebrass",
+  "icon" : "fa-brands fa-instagram"
+}
+]

@@ -9,11 +9,8 @@
 <meta property="og:description" content="{{ meta.description or site.description }}">
 <meta property="og:url" content="{{ page.url | url | absoluteUrl(site.baseUrl) }}">
 <meta property="og:locale" content="{{ site.local or meta.locale }}">
+<meta property="og:type" content="website">
 
-{%- if meta.image -%}
-<meta property="og:image" content="{{ meta.image | url | absoluteUrl(site.baseUrl) }}">
-{%- endif -%}
-{# eo Open Graph #}
 
 {# Twitter #}
 <meta name="twitter:card" content="{% if meta.image -%}summary_large_image{% else %}summary{% endif %}">
