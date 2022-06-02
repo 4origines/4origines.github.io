@@ -1,16 +1,16 @@
 [{
   "site" : "Facebook",
   "link" : "https://www.facebook.com/4originesbeer",
-  "icon" : "fa-solid fa-envelope"
+  "icon" : "fa-brands fa-facebook"
 },
 {
   "site" : "Instagram",
   "link" : "https://www.instagram.com/originebrass/",
-  "icon" : "fa-brands fa-facebook"
+  "icon" : "fa-brands fa-instagram"
 },
 {
   "site" : "Mail",
-  "link" : "originebrass",
-  "icon" : "fa-brands fa-instagram"
+  "link" : "mailto:info@originebrass.com",
+  "icon" : "fa-solid fa-envelope"
 }
 ]
