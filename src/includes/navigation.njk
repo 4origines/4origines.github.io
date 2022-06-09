@@ -8,7 +8,7 @@
 {%- endmacro %}
 {# See: https://www.11ty.dev/docs/plugins/navigation/ #}
 {# Nav Links  #}
-<ul class="nav nav-pills nav-fill text-black">
+<ul class="nav nav-pills nav-fill text-white">
     {%- for item in collections.all | eleventyNavigation -%}
     {%- if item.url and item.hideInMainNav != true -%}
     {%- set isCurrent = (item.url == page.url) -%}
