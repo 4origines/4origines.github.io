@@ -1,15 +1,15 @@
 <div class="container py-4">
   <header>
-        <div class="logo">
-          <a href="{{ '/' | url }}" class="text-decoration-none row">
-            <div class="col-3">
-              <img src="{{ '/assets/images/4O-Logo-code.svg' | url }}" alt="Microbrasserie 4 Origines" class="me-2 img-fluid">
-            </div>
-            <div class="col title text-uppercase">
-              <span>{{ site.title }}</span>
-            </div>
-          </a>
+    <div class="logo text-center my-4">
+      <a href="{{ '/' | url }}" class="text-white text-decoration-none row">
+        <div class="col-3">
+          <img src="{{ '/assets/images/4OLogo.jpg' | url }}" alt="Microbrasserie 4 Origines" class="me-2 img-fluid">
         </div>
+        <div class="col-12 title text-uppercase">
+          <span>{{ site.title }}</span>
+        </div>
+      </a>
+    </div>
     <div class="pb-3 mb-4 border-bottom">
           <nav class="navbar navbar-light navbar-expand-lg">
             <div class="container-fluid">
@@ -27,6 +27,6 @@
               <div class="collapse navbar-collapse" id="navbarNav">{% include "navigation.njk" %}</div>
             </div>
           </nav>
-    </div>
+      </div>
   </header>
 </div>
