@@ -1,5 +1,3 @@
-
-
 /* via https://getbootstrap.com/docs/5.0/examples/jumbotron/ */
 .bd-placeholder-img {
 	font-size: 1.125rem;
@@ -16,14 +14,18 @@
 }
 
 .logo {
-	.title {
-		font-size: 3rem;
-		letter-spacing: .2em;
-    font-family: 'EB Garamond', serif;
+  img {
+    width: 230px;
+  }
+}
 
-	}
+.title {
+	font-size: 3rem;
+	letter-spacing: .2em;
+	font-family: 'EB Garamond', serif;
 
 }
+
 
 .img-fit-cover-container {
 	&.rounded-3 {
