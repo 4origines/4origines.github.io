@@ -1,3 +1,5 @@
+// MENU STYLES
+
 @font-face {
   font-family: 'icomoon';
   src: url('/assets/fonts/icomoon.eot?xd2f08');
@@ -46,6 +48,18 @@
 .icon-vegetarian:before {
   content: "\e901";
   color: #06aa51;
+}
+
+#legend {
+
+
+  li {
+
+    span {
+      margin-right: 15px;
+    }
+  }
+
 }
 
 /* via https://getbootstrap.com/docs/5.0/examples/jumbotron/ */
