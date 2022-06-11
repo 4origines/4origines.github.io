@@ -7,11 +7,6 @@ eleventyNavigation:
   order: 1
 ---
 
-<p class="alert alert-danger" role="alert">
-  The menu is just an example of that the menu will look like.
-</p>
-
-
 <div id="menu" class="row g-5">
   {% for item in menu.en %}
   <section class="col-6">
@@ -22,11 +17,9 @@ eleventyNavigation:
       <section class="mt-3">
         <h3>
           {{ item.name }}
-          <small style="font-weight:300; font-size: 1rem">
-            {% if item.Vegetarian == true %} - Vegetarian{% endif %}
-            {% if item.Vegan == true %} - Vegan{% endif %}
-            {% if item.GlutenFree == true %} - Gluten Free{% endif %}
-          </small>
+          {% if item.Vegetarian == true %}<span class="icon-vegetarian"></span> <span class="visually-hidden">Vegetarian</span>{% endif %}
+          {% if item.Vegan == true %}<span class="icon-vegan"></span> <span class="visually-hidden">Vegan</span>{% endif %}
+          {% if item.GlutenFree == true %} <span class="icon-glutenfree"></span> <span class="visually-hidden">Gluten Free</span>{% endif %}
         </h3>
           <p>{{ item.description }}</p>
           {# <p>${{ item.price }}</p> #}
