@@ -1,3 +1,14 @@
+// SITE WIDE STYLES
+
+a {
+  color: $link-color;
+  text-decoration: underline;
+
+  &:hover {
+    color: $link-color-hover;
+  }
+}
+
 // MENU STYLES
 
 @font-face {
@@ -29,6 +40,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.nav-link {
+  color: $link-color;
+
+  &:hover {
+    color: $link-color-hover
+  }
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: $link-color;
+  color: #000;
+}
+
 // Custom font icons
 .icon-4o:before {
   content: "\e900";
@@ -44,22 +69,29 @@
   color: #06aa51;
 }
 
-
 .icon-vegetarian:before {
   content: "\e901";
   color: #06aa51;
 }
 
 #legend {
-
-
   li {
 
     span {
       margin-right: 15px;
     }
   }
+}
 
+
+.btn-secondary {
+  background-color: $link-color;
+  color: #000;
+
+  &:hover {
+    background-color: $link-color-hover;
+    color: #000;
+  }
 }
 
 /* via https://getbootstrap.com/docs/5.0/examples/jumbotron/ */
@@ -90,7 +122,6 @@
 
 }
 
-
 .img-fit-cover-container {
   &.rounded-3 {
     picture img {
@@ -114,12 +145,11 @@
 .social {
 
   a {
-    color: #fff;
     text-decoration: none;
+    color: $link-color;
 
     &:hover {
-      color: #0d6efd;
+      color: $link-color-hover;
     }
   }
-
 }
