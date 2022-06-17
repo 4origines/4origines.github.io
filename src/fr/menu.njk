@@ -8,7 +8,7 @@ eleventyNavigation:
   order: 1
 ---
 
-<aside id="legend" class="text-center">
+<aside id="legend" class="text-center container">
   <h2>Légende</h2>
   <p>Les icônes présentes dans le menu représentent les éléments suivants&nbsp;:</p>
   <ul class="row list-unstyled m-4">
@@ -58,7 +58,7 @@ eleventyNavigation:
   </ul>
 </nav>
 
-<div id="menu" class="row g-5">
+<div id="fullMenu" class="row g-5">
   {% for item in menu[locale] %}
     <section class="col-lg-6">
       <div class="p-3 border">
