@@ -20,9 +20,7 @@
     {% include "header.njk" %}
 
     <main id="main" class="container-fluid py-2 text-center">
-      <p class="alert alert-danger" role="alert">
-        <strong>{{ site[locale].alert }}</strong>
-      </p>
+
       <h1 class="pt-4">{{ title }}</h1>
       <p>{{ description }}</p>
       {{ content | safe }}
