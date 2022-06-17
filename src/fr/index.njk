@@ -1,0 +1,25 @@
+---
+title: Bienvenue chez Origine Brass
+image: "/assets/images/open-graph/teaser.jpeg"
+layout: base
+eleventyNavigation:
+  key: accueil
+---
+
+<p class="fs-4 pt-2">
+  <a href="{{ site.linkMap }}">
+    <i class="fa-solid fa-map me-2" aria-hidden="true"></i>
+    {{ site[locale].address }}</a>
+</p>
+<a class="btn btn-secondary btn-lg mt-2" href="/{{ locale }}/menu">
+  <i class="fa-solid fa-utensils me-2" aria-hidden="true"></i>
+      Voir le menu
+    </a>
+{# <a class="btn btn-secondary btn-lg mt-2" href="#" disabled>
+    <i class="fa-solid fa-calendar-check me-2" aria-hidden="true"></i>
+      Faire une réservation
+	</a> #}
+<dl class="mt-4">
+  <dt>Heures:</dt>
+  <dd>Mercredi au samedi <time datetime="11:00">11h00</time> - <time datetime="23:00">23h00</time>.</dd>
+</dl>

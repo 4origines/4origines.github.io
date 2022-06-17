@@ -1,0 +1,101 @@
+---
+layout: base
+icon: fa-utensils
+title: Menu
+description: "Bières artisanales, pizzas au levain et vins naturels"
+eleventyNavigation:
+  key: Menu
+  order: 1
+---
+
+<aside id="legend" class="text-center">
+  <h2>Légende</h2>
+  <p>Les icônes présentes dans le menu représentent les éléments suivants&nbsp;:</p>
+  <ul class="row list-unstyled m-4">
+    <li class="col-md-4 col-sm-12">
+      <span class="icon-vegetarian" aria-hidden="true"></span>
+      {% if locale == "fr" %}
+        Végétarien
+        {% else %}
+        Vegetarian
+      {% endif %}
+    </li>
+    <li class="col-md-4 col-sm-12">
+      <span class="icon-vegan" aria-hidden="true"></span>
+      {% if locale == "fr" %}
+        Végétalien
+        {% else %}
+        Vegan
+      {% endif %}
+    </li>
+    <li class="col-md-4 col-sm-12">
+      <span class="icon-glutenfree" aria-hidden="true"></span>
+      {% if locale == "fr" %}
+        Sans gluten
+        {% else %}
+        Gluten Free
+      {% endif %}
+    </li>
+  </ul>
+</aside>
+
+<nav class="d-sm-block d-md-block d-lg-none" aria-labelledby="menutypes">
+  <h2 id="menutypes" class="visually-hidden">Sélection du menu</h2>
+  <ul class="d-grid gap-2 list-unstyled">
+    {% for item in menu[locale] %}
+      <li>
+        <a class="d-block btn btn-secondary" href="#{{ item.section | slug }}">{{ item.section }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+
+<div id="menu" class="row g-5">
+  {% for item in menu[locale] %}
+    <section class="col-lg-6">
+      <div class="p-3 border">
+        <h2>{{ item.section }}</h2>
+        <p>{{ item.description }}</p>
+        {% for item in item.items %}
+          <section class="mt-3">
+            <h3>
+              {{ item.name }}
+              {% if item.Vegetarian == true %}
+                <span class="icon-vegetarian" aria-hidden="true"></span>
+                <span class="visually-hidden">
+                  {% if locale == fr %}
+                  Végétarien
+                  {% else %}
+                  Vegetarian
+                {% endif %}
+                </span>
+              {% endif %}
+              {% if item.Vegan == true %}
+                <span class="icon-vegan" aria-hidden="true"></span>
+                <span class="visually-hidden">
+                  {% if locale == "fr" %}
+                    Végétalien
+                    {% else %}
+                    Vegan
+                  {% endif %}
+                </span>
+              {% endif %}
+              {% if item.GlutenFree == true %}
+                <span class="icon-glutenfree" aria-hidden="true"></span>
+                <span class="visually-hidden">
+                  {% if locale == "fr" %}
+                  Sans gluten
+                  {% else %}
+                    Gluten Free
+                  {% endif %}
+                </span>
+              {% endif %}
+            </h3>
+            <p>{{ item.description }}</p>
+            {# <p>${{ item.price }}</p> #}
+          </section>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</div>

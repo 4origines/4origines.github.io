@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang="{{ meta.lang or site.lang }}">
+<html lang="{{ locale }}">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ site.title }} - {{ title or meta.title }}</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="{{ '/dist/app.css' | url }}" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{{ site[locale].title }} - {{ title }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="{{ '/dist/app.css' | url }}"/>
     {% include "favicon.njk" %}
     {% include "meta.njk" %}
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond&amp;display=swap" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond&amp;display=swap"/>
   </head>
 
   <body class="bg-black text-white">
     <!-- skiplinks -->
-    <a href="#main" class="visually-hidden-focusable">Skip to main content</a>
+    <a href="#main" class="visually-hidden-focusable">{{ site[locale].skipMainContent }}</a>
 
     {% include "header.njk" %}
 
-    <main id="main">
-      <div class="container">
-        <p class="alert alert-danger" role="alert">This site is under construction</p>
-      </div>
-      <div class="container py-4">
-        {{ content | safe }}
-      </div>
+    <main id="main" class="container-fluid py-2 text-center">
+      <p class="alert alert-danger" role="alert">
+        <strong>{{ site[locale].alert }}</strong>
+      </p>
+      <h1 class="pt-4">{{ title }}</h1>
+      <p>{{ description }}</p>
+      {{ content | safe }}
     </main>
 
     {% include "footer.njk" %}

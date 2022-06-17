@@ -1,19 +1,19 @@
 <div class="container py-4">
   <header>
     <div class="text-center my-4">
-      <a href="{{ '/' | url }}" class="text-white text-decoration-none">
+      <a href="{{ '/{{ locale }}/' | url }}" class="text-white text-decoration-none">
         <div class="logo">
-          <img src="{{ '/assets/images/4OLogo.jpg' | url }}" alt="Microbrasserie 4 Origines" class="me-2 img-fluid">
+          <img src="{{ '/assets/images/4OLogo.jpg' | url }}" alt="{{ site[locale].companyName }}" class="me-2 img-fluid">
         </div>
         <div class="title text-uppercase">
-          <span>{{ site.title }}</span>
+          <span>{{ site[locale].title }}</span>
         </div>
       </a>
     </div>
     <div class="pb-3 mb-4 border-bottom">
-          <nav class="navbar navbar-light navbar-expand-lg">
-            <div class="container-fluid">
-              <button
+      <nav class="navbar navbar-light navbar-expand-lg">
+        <div class="container-fluid">
+          <button
                 class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
@@ -22,11 +22,11 @@
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">{% include "navigation.njk" %}</div>
-            </div>
-          </nav>
-      </div>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">{% include "navigation.njk" %}</div>
+        </div>
+      </nav>
+    </div>
   </header>
 </div>

@@ -2,6 +2,7 @@
 layout: base
 icon: fa-utensils
 title: Menu
+description: "Craft beers, sourdough pizzas and natural wines"
 eleventyNavigation:
   key: Menu
   order: 1
@@ -12,16 +13,34 @@ eleventyNavigation:
   <p>The icons found in the menu represent the following:</p>
   <ul class="row list-unstyled m-4">
     <li class="col-md-4 col-sm-12">
-      <span class="icon-vegetarian" aria-hidden="true"></span> Vegetarian</li>
+      <span class="icon-vegetarian" aria-hidden="true"></span>
+      {% if locale == "fr" %}
+        Végétarien
+        {% else %}
+        Vegetarian
+      {% endif %}
+    </li>
     <li class="col-md-4 col-sm-12">
-      <span class="icon-vegan" aria-hidden="true"></span> Vegan</li>
+      <span class="icon-vegan" aria-hidden="true"></span>
+      {% if locale == "fr" %}
+        Végétalien
+        {% else %}
+        Vegan
+      {% endif %}
+    </li>
     <li class="col-md-4 col-sm-12">
-      <span class="icon-glutenfree" aria-hidden="true"></span> Gluten Free</li>
+      <span class="icon-glutenfree" aria-hidden="true"></span>
+      {% if locale == "fr" %}
+        Sans gluten
+        {% else %}
+        Gluten Free
+      {% endif %}
+    </li>
   </ul>
 </aside>
 
 <nav class="d-sm-block d-md-block d-lg-none" aria-labelledby="menutypes">
-  <h2 id="menutypes" class="visually-hidden">Menu types</h2>
+  <h2 id="menutypes" class="visually-hidden">Menu selection</h2>
   <ul class="d-grid gap-2 list-unstyled">
     {% for item in menu.en %}
       <li>
