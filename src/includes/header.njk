@@ -1,5 +1,13 @@
+{% set otherLang = "fr" if locale == "en" else
+  "en" %}
+{% set otherLanguage = "Français" if locale == "en" else
+  "English" %}
+
 <div class="container py-4">
   <header>
+    <p class="text-right">
+      <a class="btn btn-secondary" lang="{{ otherLang }}" hreflang="{{ otherLang }}" href="/{{otherLang}}/{% if page.fileSlug == "menu" %}menu{% endif %}">{{ otherLanguage }}</a>
+    </p>
     <div class="text-center my-4">
       <a href="/{{ locale }}/" class="text-white text-decoration-none">
         <div class="logo">
