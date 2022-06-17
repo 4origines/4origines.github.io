@@ -8,7 +8,7 @@ eleventyNavigation:
   order: 1
 ---
 
-<aside id="legend" class="text-center container">
+<aside id="legend" class="text-center container border my-4">
   <h2>Légende</h2>
   <p>Les icônes présentes dans le menu représentent les éléments suivants&nbsp;:</p>
   <ul class="row list-unstyled m-4">
@@ -63,7 +63,7 @@ eleventyNavigation:
     <section class="col-lg-6">
       <div class="p-3 border">
         <h2>{{ item.section }}</h2>
-        <p>{{ item.description }}</p>
+        <p class="text-center">{{ item.description }}</p>
         {% for item in item.items %}
           <section class="mt-3">
             <h3>

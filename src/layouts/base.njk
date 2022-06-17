@@ -21,8 +21,10 @@
 
     <main id="main" class="container-fluid py-2 text-center">
 
-      <h1 class="pt-4">{{ title }}</h1>
-      <p>{{ description }}</p>
+      <h1>{{ title }}</h1>
+      {% if description %}
+		<p>{{ description }}</p>
+	  {% endif %}
       {{ content | safe }}
     </main>
 
