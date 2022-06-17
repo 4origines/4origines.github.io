@@ -40,6 +40,12 @@ a {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.fa-pepper-hot {
+	line-height: 1;
+	font-size: 2.2rem;
+	color: red;
+  }
+
 .nav-link {
   color: $link-color;
 
@@ -73,6 +79,7 @@ a {
   content: "\e901";
   color: #06aa51;
 }
+
 
 #legend {
   li {

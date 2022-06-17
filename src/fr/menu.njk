@@ -12,7 +12,7 @@ eleventyNavigation:
   <h2>Légende</h2>
   <p>Les icônes présentes dans le menu représentent les éléments suivants&nbsp;:</p>
   <ul class="row list-unstyled m-4">
-    <li class="col-md-4 col-sm-12">
+    <li class="col-md-3 col-sm-12">
       <span class="icon-vegetarian" aria-hidden="true"></span>
       {% if locale == "fr" %}
         Végétarien
@@ -20,7 +20,7 @@ eleventyNavigation:
         Vegetarian
       {% endif %}
     </li>
-    <li class="col-md-4 col-sm-12">
+    <li class="col-md-3 col-sm-12">
       <span class="icon-vegan" aria-hidden="true"></span>
       {% if locale == "fr" %}
         Végétalien
@@ -28,7 +28,7 @@ eleventyNavigation:
         Vegan
       {% endif %}
     </li>
-    <li class="col-md-4 col-sm-12">
+    <li class="col-md-3 col-sm-12">
       <span class="icon-glutenfree" aria-hidden="true"></span>
       {% if locale == "fr" %}
         Sans gluten
@@ -36,7 +36,15 @@ eleventyNavigation:
         Gluten Free
       {% endif %}
     </li>
-  </ul>
+	<li class="col-md-3 col-sm-12">
+	<span class="fa-solid fa-pepper-hot" aria-hidden="true"></span>
+	{% if locale == "fr" %}
+	Spicy
+	{% else %}
+	Épicé
+	{% endif %}
+</li>
+ </ul>
 </aside>
 
 <nav class="d-sm-block d-md-block d-lg-none" aria-labelledby="menutypes">
@@ -88,6 +96,16 @@ eleventyNavigation:
                   {% else %}
                     Gluten Free
                   {% endif %}
+                </span>
+              {% endif %}
+              {% if item.Spicy == true %}
+                <span class="fa-solid fa-pepper-hot" aria-hidden="true"></span>
+                <span class="visually-hidden">
+				{% if locale == "fr" %}
+					Spicy
+					{% else %}
+					Épicé
+				{% endif %}
                 </span>
               {% endif %}
             </h3>

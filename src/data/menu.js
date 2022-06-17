@@ -10,31 +10,22 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           Vegan: true,
-          GlutenFree: true,
         },
         {
           name: "Fries or Tater Tots",
           description: "Quebec potatoes or tater tots served with a spicy whipped feta dip.",
           image: "menu-item.png",
           Vegetarian: true,
-          Vegan: false,
-          GlutenFree: false,
         },
         {
           name: "Charcuterie Board",
           description: "Charcuteries, Quebec cheese, pâté, olives, nuts, house focaccia.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
         },
         {
           name: "Loaded Fries",
           description: "Pork belly. cheese curds, fries, crispy onions and house beer aioli.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
         },
         {
           name: "Cauliflower Tostada",
@@ -43,23 +34,21 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           Vegan: true,
-          GlutenFree: false,
+		  GlutenFree: true,
+		  Spicy: true,
         },
         {
           name: "German-Style Pretzel",
           description: "Warm German-style pretzel served with house beer mustard.",
           image: "menu-item.png",
           Vegetarian: true,
-          Vegan: false,
-          GlutenFree: false,
         },
         {
           name: "Jalapeno Poppers",
           description: "Jalapenos stuffed with cheese, shallots & apples. Breaded & fried.",
           image: "menu-item.png",
           Vegetarian: true,
-          Vegan: false,
-          GlutenFree: false,
+		  Spicy: true,
         },
       ],
     },
@@ -73,8 +62,6 @@ module.exports = {
             "Mixed greens, fresh herbs, cranberries, spiced nuts, cucumbers, maple- glazed smoked bacon, crispy onions, parmesan and apple cider vinaigrette.",
           image: "menu-item.png",
           Vegetarian: true,
-          Vegan: false,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -88,7 +75,6 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           Vegan: true,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -101,8 +87,6 @@ module.exports = {
             "Peaches, hierloom tomatoes, fiore di latte, oat rice, micro greens and a passion fruit vinaigrette.",
           image: "menu-item.png",
           Vegetarian: true,
-          Vegan: false,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -110,13 +94,11 @@ module.exports = {
           ],
         },
         {
-          name: "Scallop & Shrimp Salad",
+          name: "Scallop & Shrimp Salad - spicy",
           description:
             "Bay scallops, shrimps, red onions, cucumbers, radishes, wild greens & heirloom tomatoes tossed in a beer, habanero and mango vinaigrette.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
+          Spicy: true,
           additions: [
             {
               name: "",
@@ -128,9 +110,6 @@ module.exports = {
           description:
             "Genoa, mortadelle, coppa, fiore di latte, hot peppers, pickles, mixed greens, tomatoes and pesto served on sourdough bread. Served with fries.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -142,9 +121,6 @@ module.exports = {
           description:
             "Braised short ribs, sea buckthorn jelly, aged gouda, mozzarella on sourdough bread. Served with fries.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -163,7 +139,6 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           Vegan: true,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -175,8 +150,6 @@ module.exports = {
           description: "Tomato sauce, fresh mozzarella, basil and olive oil.",
           image: "menu-item.png",
           Vegetarian: true,
-          Vegan: false,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -189,8 +162,6 @@ module.exports = {
             "Sundried tomato pesto, fried artichokes, pumkin seeds, goat cheese and wild greens drizzled with beer and honey reduction.",
           image: "menu-item.png",
           Vegetarian: true,
-          Vegan: false,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -201,9 +172,6 @@ module.exports = {
           name: "Sausage",
           description: "Smoked sausage, parmesan cream sauce, Quebec asparagus, leeks.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -214,9 +182,6 @@ module.exports = {
           name: "Deli",
           description: "Tomato sauce, genoa, mortadelle, capicollo, provolone & mozzarella.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -229,8 +194,6 @@ module.exports = {
             "Local mushrooms, spinach, semi-dried tomatoes, garlic confit with ricotta and grana padano cheese.",
           image: "menu-item.png",
           Vegetarian: true,
-          Vegan: false,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -250,7 +213,6 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           Vegan: true,
-          GlutenFree: false,
         },
         {
           name: "Debrenzener Hot Dog",
@@ -259,7 +221,6 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           Vegan: true,
-          GlutenFree: false,
         },
         {
           name: "Fried Chicken And Waffles",
@@ -267,7 +228,6 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           Vegan: true,
-          GlutenFree: false,
           additions: [
             {
               name: "Tofu",
@@ -279,9 +239,6 @@ module.exports = {
           description:
             "Pan-seared rib eye filet served with (sauce to create) a sweet potato stuffed with n'duja, greek yogurt, chives and crumbled feta.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
         },
       ],
     },
@@ -293,33 +250,22 @@ module.exports = {
           name: "Crispy Chicken And Tater Tots",
           description: "House-fried chicken and crispy tater tots.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
         },
         {
           name: "Burger",
           description: "4-oz patty, cheese and bacon on brioche bun served with fries.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
         },
         {
           name: "Hot Dog",
           description: "Large beef sausage served with fries.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
         },
         {
           name: "Cheese Pizza",
           description: "Tomato sauce, mozzarella cheese.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
+          Vegetarian: true,
         },
       ],
     },
@@ -335,31 +281,22 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           Vegan: true,
-          GlutenFree: true,
         },
         {
           name: "Frites ou tater tots",
           description: "Pommes de terre du Qc ou tater tots avec trempette à la feta fouettée et épicée.",
           image: "menu-item.png",
           Vegetarian: true,
-          Vegan: false,
-          GlutenFree: false,
         },
         {
           name: "Plateau de charcuteries",
           description: "Charcuteries, fromage du Qc, pâté, olives, noix, foccacia maison.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
         },
         {
           name: "Frites toutes garnies",
           description: "Poitrine de porc, fromage en grains, frites, oignons croustillants et aïoli à la bière maison.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
         },
         {
           name: "Tostada au chou-fleur",
@@ -368,24 +305,22 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           Vegan: true,
-          GlutenFree: false,
+		  GlutenFree: true,
+		  Spicy: true,
         },
         {
           name: "Bretzel à l’allemande",
           description: "Bretzel chaud servi avec de la moutarde à la bière maison.",
           image: "menu-item.png",
           Vegetarian: true,
-          Vegan: false,
-          GlutenFree: false,
         },
         {
           name: "Poppers jalapeno",
           description: "Jalapenos farcis au fromage, échalotes et pommes. panés et frits.",
           image: "menu-item.png",
           Vegetarian: true,
-          Vegan: false,
-          GlutenFree: false,
-        },
+		  Spicy: true,
+		},
       ],
     },
     {
@@ -397,9 +332,6 @@ module.exports = {
           description:
             "Mesclun, herbes fraîches, canneberges, noix épicées, concombre, bacon fumé à l’érable, oignons croustillants, gouda vieilli avec vinaigrette au cidre de pomme.",
           image: "menu-item.png",
-          Vegetarian: true,
-          Vegan: false,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -413,7 +345,6 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           Vegan: true,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -426,8 +357,7 @@ module.exports = {
             "Pêche, tomate ancestrale, fiore de latte, riz à l’avoine, mesclun, dans une vinaigrette aux fruits de la passion.",
           image: "menu-item.png",
           Vegetarian: true,
-          Vegan: false,
-          GlutenFree: false,
+          GlutenFree: true,
           additions: [
             {
               name: "",
@@ -439,9 +369,7 @@ module.exports = {
           description:
             "Pétoncles de baie, crevettes, oignon rouge, concombre, radis, herbes sauvages et tomate ancestrale dans une vinaigrette à la mangue et à la bière.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
+		  Spicy: true,
           additions: [
             {
               name: "",
@@ -453,9 +381,6 @@ module.exports = {
           description:
             "Gênes, mortadelle, coppa, fiore de latte, piment fort, cornichon, mesclun, tomate et pesto sur foccacia maison. servi avec frites.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -467,9 +392,6 @@ module.exports = {
           description:
             "Côtes levées braisées, gelée d’argousier, gouda vieilli, mozzarella sur pain au levain. servi avec frites.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -480,7 +402,7 @@ module.exports = {
     },
     {
       section: "Pizzas",
-      description: " Notre levain est fait maison et fermenté pendan 48h.",
+      description: " Notre pâte au levain est fait maison et fermenté pendan 48h.",
       items: [
         {
           name: "Marinara",
@@ -488,7 +410,6 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           Vegan: true,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -500,8 +421,6 @@ module.exports = {
           description: "Sauce tomate, mozzarella fraîche, basilic et huile d’olive.",
           image: "menu-item.png",
           Vegetarian: true,
-          Vegan: false,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -514,8 +433,6 @@ module.exports = {
             "Pesto de tomates séchées, artichauts frits, fromage de chèvre et herbes sauvages arrosé d’une réduction de miel et de bière.",
           image: "menu-item.png",
           Vegetarian: true,
-          Vegan: false,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -526,9 +443,6 @@ module.exports = {
           name: "Saucisson",
           description: "Saucisses de porc émietté, crème de parmesan, rapini.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -539,9 +453,6 @@ module.exports = {
           name: "Déli",
           description: "Sauce tomate, soppressata, mortadelle, capiollo et mozzarella.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -553,8 +464,6 @@ module.exports = {
           description: "Champignons, épinards, tomates mi-séchées, ail confit, fromage ricotta et grana padano.",
           image: "menu-item.png",
           Vegetarian: true,
-          Vegan: false,
-          GlutenFree: false,
           additions: [
             {
               name: "",
@@ -572,9 +481,6 @@ module.exports = {
           description:
             "Galette de boeuf onces avec bacon, fromage monterey jack, ciboulette et ail confit, cornichon, tomate et laitue. servi avec frites.",
           image: "menu-item.png",
-          Vegetarian: true,
-          Vegan: true,
-          GlutenFree: false,
         },
         {
           name: "Hot dog debrenzener",
@@ -583,7 +489,6 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           Vegan: true,
-          GlutenFree: false,
         },
         {
           name: "Poulet frit et gaufre",
@@ -592,11 +497,12 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           Vegan: true,
-          GlutenFree: false,
           substitution: [
             {
               name: "Tofu",
-            },
+			  Vegetarian: true,
+			  Vegan: true,
+			},
           ],
         },
         {
@@ -604,9 +510,6 @@ module.exports = {
           description:
             "Filet d’entrecôte poêlé servi avec sauce, patate douce farcie de ‘nduja, yogourt grec, ciboulette et feta émietté.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
         },
       ],
     },
@@ -618,33 +521,22 @@ module.exports = {
           name: "Poulet frit et tater tots",
           description: "Poulet frit maison avec petites patates croustillantes.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
         },
         {
           name: "Burger",
           description: "Galette de boeuf onces, fromage et bacon sur un petit pain brioché. servi avec frites.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
         },
         {
           name: "Hot Dog",
           description: "Saucisse au boeuf avec frites.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
         },
         {
           name: "Pizza au fromage",
           description: "Sauce tomate et mozzarella.",
           image: "menu-item.png",
-          Vegetarian: false,
-          Vegan: false,
-          GlutenFree: false,
+          Vegetarian: true,
         },
       ],
     },
