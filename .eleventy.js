@@ -78,6 +78,9 @@ module.exports = function (eleventyConfig) {
   // Copy (favicon) files to output (_site)
   eleventyConfig.addPassthroughCopy({ "src/favicon_package/": "/" });
 
+  //
+  eleventyConfig.addPassthroughCopy("src/CNAME");
+
   // Copy transformed images
   // TODO: this is executed too soon? imgs not there?
   eleventyConfig.addPassthroughCopy("img/");
