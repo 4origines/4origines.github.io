@@ -158,8 +158,13 @@ module.exports = {
           description:
             "Hungarian smoked sausage in a soft bun topped with pickled mango and cabbage slaw. Served with fries.",
           image: "menu-item.png",
-          Vegetarian: true,
-          Vegan: true,
+          additions: [
+            {
+              name: "Vegan",
+              Vegetarian: true,
+              Vegan: true,
+            },
+          ],
         },
         {
           name: "Fried Chicken and Waffles",
@@ -366,15 +371,20 @@ module.exports = {
           description:
             "Saucisse fumée hongroise servie dans un petit pain moelleux garni de salade de chou et mangue. servi avec frites.",
           image: "menu-item.png",
-          Vegetarian: true,
-          Vegan: true,
+          additions: [
+            {
+              name: "Végétalien",
+              Vegetarian: true,
+              Vegan: true,
+            },
+          ],
         },
         {
           name: "Poulet frit et gaufre",
           description:
             "Poulet frit croustillant et une gaufre au sésame servis avec une réduction au piment citronné et à l’érable.",
           image: "menu-item.png",
-          substitution: [
+          additions: [
             {
               name: "Tofu",
               Vegetarian: true,
