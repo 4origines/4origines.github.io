@@ -80,6 +80,26 @@ eleventyNavigation:
               {% if item.Spicy == true %}
                 <span class="fa-solid fa-pepper-hot" aria-hidden="true"></span>
                 <span class="visually-hidden">Spicy</span>{% endif %}
+              {% if item.additions %}
+                <small>Option:
+                  {% for addition in item.additions %}
+                    {{ addition.name }}
+                    {% if addition.Vegetarian == true %}
+                      <span class="icon-vegetarian" aria-hidden="true"></span>
+                      <span class="visually-hidden">Vegetarian</span>{% endif %}
+                    {% if addition.Vegan == true %}
+                      <span class="icon-vegan" aria-hidden="true"></span>
+                      <span class="visually-hidden">Vegan</span>{% endif %}
+                    {% if addition.GlutenFree == true %}
+                      <span class="icon-glutenfree" aria-hidden="true"></span>
+                      <span class="visually-hidden">Gluten Free</span>{% endif %}
+                    {% if addition.Spicy == true %}
+                      <span class="fa-solid fa-pepper-hot" aria-hidden="true"></span>
+                      <span class="visually-hidden">Spicy</span>{% endif %}
+                  {% endfor %}
+                </small>
+
+              {% endif %}
             </h3>
             <p>{{ item.description }}</p>
             {# <p>${{ item.price }}</p> #}

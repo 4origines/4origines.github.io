@@ -61,11 +61,6 @@ module.exports = {
             "Mixed greens, fresh herbs, cranberries, spiced nuts, cucumbers, maple- glazed smoked bacon, crispy onions, parmesan and apple cider vinaigrette.",
           image: "menu-item.png",
           Vegetarian: true,
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Corn Salad",
@@ -74,11 +69,6 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           Vegan: true,
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Caprese Salad",
@@ -86,11 +76,6 @@ module.exports = {
             "Peaches, hierloom tomatoes, fiore di latte, oat rice, micro greens and a passion fruit vinaigrette.",
           image: "menu-item.png",
           Vegetarian: true,
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Scallop & Shrimp Salad",
@@ -98,33 +83,18 @@ module.exports = {
             "Bay scallops, shrimps, red onions, cucumbers, radishes, wild greens & heirloom tomatoes tossed in a beer, habanero and mango vinaigrette.",
           image: "menu-item.png",
           Spicy: true,
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Deli Sandwich",
           description:
             "Genoa, mortadelle, coppa, fiore di latte, hot peppers, pickles, mixed greens, tomatoes and pesto served on sourdough bread. Served with fries.",
           image: "menu-item.png",
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Grilled Cheese Sandwich",
           description:
             "Braised short ribs, sea buckthorn jelly, aged gouda, mozzarella on sourdough bread. Served with fries.",
           image: "menu-item.png",
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
       ],
     },
@@ -138,22 +108,12 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           Vegan: true,
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Margherita",
           description: "Tomato sauce, fresh mozzarella, basil and olive oil.",
           image: "menu-item.png",
           Vegetarian: true,
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Artichoke & Goat Cheese",
@@ -161,31 +121,16 @@ module.exports = {
             "Sundried tomato pesto, fried artichokes, pumkin seeds, goat cheese and wild greens drizzled with beer and honey reduction.",
           image: "menu-item.png",
           Vegetarian: true,
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Sausage",
           description: "Smoked sausage, parmesan cream sauce, Quebec asparagus, leeks.",
           image: "menu-item.png",
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Deli",
           description: "Tomato sauce, genoa, mortadelle, capicollo, provolone & mozzarella.",
           image: "menu-item.png",
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Mushroom",
@@ -193,11 +138,6 @@ module.exports = {
             "Local mushrooms, spinach, semi-dried tomatoes, garlic confit with ricotta and grana padano cheese.",
           image: "menu-item.png",
           Vegetarian: true,
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
       ],
     },
@@ -225,11 +165,11 @@ module.exports = {
           name: "Fried Chicken and Waffles",
           description: "Crispy house fried chicken with a sesame waffle & a citrus chili & maple reduction.",
           image: "menu-item.png",
-          Vegetarian: true,
-          Vegan: true,
           additions: [
             {
               name: "Tofu",
+              Vegetarian: true,
+              Vegan: true,
             },
           ],
         },
@@ -331,11 +271,6 @@ module.exports = {
           description:
             "Mesclun, herbes fraîches, canneberges, noix épicées, concombre, bacon fumé à l’érable, oignons croustillants, gouda vieilli avec vinaigrette au cidre de pomme.",
           image: "menu-item.png",
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Salade de maïs",
@@ -344,11 +279,6 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           Vegan: true,
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Salade caprese",
@@ -357,11 +287,6 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           GlutenFree: true,
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Salade de pétoncles et crevettes",
@@ -369,33 +294,18 @@ module.exports = {
             "Pétoncles de baie, crevettes, oignon rouge, concombre, radis, herbes sauvages et tomate ancestrale dans une vinaigrette à la mangue et à la bière.",
           image: "menu-item.png",
           Spicy: true,
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Déli-sandwich",
           description:
             "Gênes, mortadelle, coppa, fiore de latte, piment fort, cornichon, mesclun, tomate et pesto sur foccacia maison. servi avec frites.",
           image: "menu-item.png",
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Sandwich au fromage grillé",
           description:
             "Côtes levées braisées, gelée d’argousier, gouda vieilli, mozzarella sur pain au levain. servi avec frites.",
           image: "menu-item.png",
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
       ],
     },
@@ -409,22 +319,12 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           Vegan: true,
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Margherita",
           description: "Sauce tomate, mozzarella fraîche, basilic et huile d’olive.",
           image: "menu-item.png",
           Vegetarian: true,
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Artichaut et fromage de chèvre",
@@ -432,42 +332,22 @@ module.exports = {
             "Pesto de tomates séchées, artichauts frits, fromage de chèvre et herbes sauvages arrosé d’une réduction de miel et de bière.",
           image: "menu-item.png",
           Vegetarian: true,
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Saucisson",
           description: "Saucisses de porc émietté, crème de parmesan, rapini.",
           image: "menu-item.png",
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Déli",
           description: "Sauce tomate, soppressata, mortadelle, capiollo et mozzarella.",
           image: "menu-item.png",
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
         {
           name: "Champignon",
           description: "Champignons, épinards, tomates mi-séchées, ail confit, fromage ricotta et grana padano.",
           image: "menu-item.png",
           Vegetarian: true,
-          additions: [
-            {
-              name: "",
-            },
-          ],
         },
       ],
     },
@@ -494,11 +374,11 @@ module.exports = {
           description:
             "Poulet frit croustillant et une gaufre au sésame servis avec une réduction au piment citronné et à l’érable.",
           image: "menu-item.png",
-          Vegetarian: true,
-          Vegan: true,
           substitution: [
             {
               name: "Tofu",
+              Vegetarian: true,
+              Vegan: true,
             },
           ],
         },
