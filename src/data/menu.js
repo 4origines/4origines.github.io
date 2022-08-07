@@ -34,21 +34,20 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           Vegan: true,
-		  GlutenFree: true,
-		  Spicy: true,
-        },
-        {
-          name: "German-Style Pretzel",
-          description: "Warm German-style pretzel served with house beer mustard.",
-          image: "menu-item.png",
-          Vegetarian: true,
+          GlutenFree: true,
+          Spicy: true,
         },
         {
           name: "Jalapeno Poppers",
           description: "Jalapenos stuffed with cheese, shallots & apples. Breaded & fried.",
           image: "menu-item.png",
           Vegetarian: true,
-		  Spicy: true,
+          Spicy: true,
+        },
+        {
+          name: "Mini-Pogos (6)",
+          description: "Hot-Dog fried in house corn batter with mortadella",
+          image: "menu-item.png",
         },
       ],
     },
@@ -94,7 +93,7 @@ module.exports = {
           ],
         },
         {
-          name: "Scallop & Shrimp Salad - spicy",
+          name: "Scallop & Shrimp Salad",
           description:
             "Bay scallops, shrimps, red onions, cucumbers, radishes, wild greens & heirloom tomatoes tossed in a beer, habanero and mango vinaigrette.",
           image: "menu-item.png",
@@ -223,7 +222,7 @@ module.exports = {
           Vegan: true,
         },
         {
-          name: "Fried Chicken And Waffles",
+          name: "Fried Chicken and Waffles",
           description: "Crispy house fried chicken with a sesame waffle & a citrus chili & maple reduction.",
           image: "menu-item.png",
           Vegetarian: true,
@@ -235,16 +234,15 @@ module.exports = {
           ],
         },
         {
-          name: "House-Cut Rib Eye Filet",
-          description:
-            "Pan-seared rib eye filet served with (sauce to create) a sweet potato stuffed with n'duja, greek yogurt, chives and crumbled feta.",
+          name: "Steak of The Week",
+          description: "Weekly cut created by our kitchen team, ask your wait staff for more information.",
           image: "menu-item.png",
         },
       ],
     },
     {
       section: "Kids' Corner",
-      description: "",
+      description: "Kids eat all they can for 6$ every Saturday from 11:00am until 6:00pm",
       items: [
         {
           name: "Crispy Chicken And Tater Tots",
@@ -257,8 +255,8 @@ module.exports = {
           image: "menu-item.png",
         },
         {
-          name: "Hot Dog",
-          description: "Large beef sausage served with fries.",
+          name: "Pogo",
+          description: "Hotdog dredged in our house corn batter, served with tater tots.",
           image: "menu-item.png",
         },
         {
@@ -270,6 +268,8 @@ module.exports = {
       ],
     },
   ],
+
+  // XXXXXXX FRENCH MENU XXXXXXX
   fr: [
     {
       section: "Entrées",
@@ -305,22 +305,21 @@ module.exports = {
           image: "menu-item.png",
           Vegetarian: true,
           Vegan: true,
-		  GlutenFree: true,
-		  Spicy: true,
-        },
-        {
-          name: "Bretzel à l’allemande",
-          description: "Bretzel chaud servi avec de la moutarde à la bière maison.",
-          image: "menu-item.png",
-          Vegetarian: true,
+          GlutenFree: true,
+          Spicy: true,
         },
         {
           name: "Poppers jalapeno",
           description: "Jalapenos farcis au fromage, échalotes et pommes. panés et frits.",
           image: "menu-item.png",
           Vegetarian: true,
-		  Spicy: true,
-		},
+          Spicy: true,
+        },
+        {
+          name: "Pogo-Mini (6)",
+          description: "Hot-dog enrobé dans notre mélange de pâte maison avec mortadelle.",
+          image: "menu-item.png",
+        },
       ],
     },
     {
@@ -369,7 +368,7 @@ module.exports = {
           description:
             "Pétoncles de baie, crevettes, oignon rouge, concombre, radis, herbes sauvages et tomate ancestrale dans une vinaigrette à la mangue et à la bière.",
           image: "menu-item.png",
-		  Spicy: true,
+          Spicy: true,
           additions: [
             {
               name: "",
@@ -402,7 +401,7 @@ module.exports = {
     },
     {
       section: "Pizzas",
-      description: " Notre pâte au levain est fait maison et fermenté pendan 48h.",
+      description: "Notre pâte au levain est fait maison et fermenté pendan 48h.",
       items: [
         {
           name: "Marinara",
@@ -500,22 +499,20 @@ module.exports = {
           substitution: [
             {
               name: "Tofu",
-			  Vegetarian: true,
-			  Vegan: true,
-			},
+            },
           ],
         },
         {
-          name: "Filet d’entrecôte",
+          name: "Steak de la semaine",
           description:
-            "Filet d’entrecôte poêlé servi avec sauce, patate douce farcie de ‘nduja, yogourt grec, ciboulette et feta émietté.",
+            "Coupe de la semaine creér pas l'equipe de la cuisine. Veuillez vous informer au près de votre serveur(euse).",
           image: "menu-item.png",
         },
       ],
     },
     {
       section: "Menu pour enfants",
-      description: "",
+      description: "Les enfants mangent à volonté pour 6$ tous les samedis de 11h00 à 18h00",
       items: [
         {
           name: "Poulet frit et tater tots",
@@ -528,8 +525,8 @@ module.exports = {
           image: "menu-item.png",
         },
         {
-          name: "Hot Dog",
-          description: "Saucisse au boeuf avec frites.",
+          name: "Pogo",
+          description: "Saucisse enrobe dans notre mélange de pâte maison. Servi avec tater tots.",
           image: "menu-item.png",
         },
         {
