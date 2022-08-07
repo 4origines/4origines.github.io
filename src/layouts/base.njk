@@ -23,11 +23,12 @@
 
       <h1>{{ title }}</h1>
       {% if description %}
-		<p>{{ description }}</p>
-	  {% endif %}
+        <p>{{ description }}</p>
+      {% endif %}
       {{ content | safe }}
     </main>
 
+    {% include "a11y.njk" %}
     {% include "footer.njk" %}
     <script type="text/javascript" src="{{ '/dist/app.js' | url }}"></script>
   </body>
