@@ -1,5 +1,6 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss"); // needed for absoluteUrl feature
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const slugify = require("slugify");
 
 // Base setup for builds, needed for og tags and correct image paths
 // (mostly for github pages deployment, see build-deploy.yaml)
@@ -61,6 +62,19 @@ module.exports = function (eleventyConfig) {
   // Setting ids in heading
   const anchors_plugin = require("@orchidjs/eleventy-plugin-ids");
   eleventyConfig.addPlugin(anchors_plugin);
+
+  // Add slugify filter
+  eleventyConfig.addFilter("slug", (str) => {
+    if (!str) {
+      return;
+    }
+
+    return slugify(str, {
+      lower: true,
+      strict: true,
+      remove: /[']/g,
+    });
+  });
 
   // Set site title
   eleventyConfig.addGlobalData("site", globalSiteData);
