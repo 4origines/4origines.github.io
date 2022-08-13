@@ -4,11 +4,6 @@ Using the [mandrasch/11ty-plain-bootstrap5: Plain template for static site gener
 
 Minimalistic template for the awesome static site generator [Eleventy/11ty](https://www.11ty.dev/), just
 
-- [Bootstrap 5](https://www.npmjs.com/package/bootstrap) (via npm)
-- [Laravel Mix](https://www.npmjs.com/package/laravel-mix)* for SCSS / JS compilation (incl. Autoprefixer)
-
-_* Laravel Mix is a wrapper around webpack, it is purely NodeJS, no PHP involved ;-)_
-
 Plugins used (you don't have to keep them):
 
 - [eleventy-navigation](https://www.11ty.dev/docs/plugins/navigation/)
@@ -97,14 +92,3 @@ You can tell Node.js to stop running by pressing the <kbd>Control</kbd> and <kbd
 - `npm run build`
 
 _Advice: `BASE_URL` should be set as node env variable for open graph image support (they need full instead of relative URLs. You can strip them out as well in `meta.njk`. See `.github/workflows/build-deploy.yaml` for information. Currently it defaults to http://localhost:8080 if no env var is set.)_
-
-## Bootstrap
-
-Bootstrap information for npm/sass:
-
-- https://getbootstrap.com/docs/5.0/getting-started/download/#source-files
-- https://getbootstrap.com/docs/5.0/customize/sass/
-
-Sustainable Web Design:
-
-- Comment out not needed bootstrap components in `src/scss/app.scss`
